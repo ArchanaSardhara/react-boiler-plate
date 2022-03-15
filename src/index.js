@@ -1,8 +1,8 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React from "react";
+import { render } from "react-dom";
 
-import App from './app';
+import RouteComponent from "./components/routes";
 
-import "./css/main.scss";
+import "./assets/scss/main.scss";
 
-render(<App />, document.getElementById('root'));
+render(<RouteComponent />, document.getElementById("root"));
