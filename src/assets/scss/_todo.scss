@@ -1,0 +1,41 @@
+.todo-container {
+  .todo-heading {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .todo-section {
+    padding: 15px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .todo-section:last-child {
+    border-bottom-width: 0px;
+  }
+  .todo-form {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    .todo-form--group {
+      width: 50%;
+      margin-bottom: 0px !important;
+    }
+  }
+  .todo-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .todo-card {
+      margin: 15px;
+      padding: 15px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      width: 50%;
+      max-width: 400px;
+      .todo-card--title {
+        font-size: 16px;
+      }
+      .todo-card--text {
+        font-size: 11px;
+      }
+    }
+  }
+}
