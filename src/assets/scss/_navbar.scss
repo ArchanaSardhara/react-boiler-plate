@@ -1,0 +1,27 @@
+.header-container {
+  position: relative;
+  .logo {
+    height: 40px;
+  }
+  .logo img {
+    height: 40px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin: 0px 10px;
+  }
+  .nav-item .dropdown-menu {
+    background: #343a40;
+  }
+  .nav-item .dropdown-item {
+    color: #ffffff;
+  }
+  .nav-item .dropdown-item:hover {
+    background: #434b53;
+  }
+  .dropdown-divider {
+    border-top: 1px solid #818181;
+  }
+  .dropdown-menu {
+    right: 0px;
+  }
+}
