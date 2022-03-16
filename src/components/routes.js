@@ -4,7 +4,6 @@ import Header from "./layout/header";
 
 import Home from "./pages/home";
 import Todo from "./pages/todo";
-import AddTodo from "./pages/todo/todoCard";
 
 const RouteComponent = () => {
   return (
