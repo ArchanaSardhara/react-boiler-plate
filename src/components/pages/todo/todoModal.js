@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { useNavigate } from "react-router";
 import {
   Button,
@@ -64,6 +65,16 @@ const TodoModal = (props) => {
       </ModalFooter>
     </Modal>
   );
+};
+
+TodoModal.defaultProps = {
+  selectedTodo: null,
+  handleSumbit: () => {},
+};
+
+TodoModal.propTypes = {
+  selectedTodo: PropTypes.object,
+  handleSumbit: PropTypes.func,
 };
 
 export default TodoModal;

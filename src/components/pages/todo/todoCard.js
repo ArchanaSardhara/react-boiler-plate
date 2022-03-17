@@ -1,5 +1,6 @@
-import moment from "moment";
 import React from "react";
+import PropTypes from "prop-types";
+import moment from "moment";
 
 const TodoCard = (props) => {
   const { id, text, createdAt, updatedAt, cardClick } = props;
@@ -14,6 +15,22 @@ const TodoCard = (props) => {
       </div>
     </div>
   );
+};
+
+TodoCard.defaultProps = {
+  text: "",
+  createdAt: "",
+  updatedAt: "",
+  updatedAt: "",
+  cardClick: () => {},
+};
+
+TodoCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  text: PropTypes.string,
+  createdAt: PropTypes.string,
+  updatedAt: PropTypes.string,
+  cardClick: PropTypes.func,
 };
 
 export default TodoCard;
