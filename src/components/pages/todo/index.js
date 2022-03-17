@@ -77,7 +77,12 @@ const Todo = () => {
               />
             </Col>
           </FormGroup>
-          <Button className="mx-2" disabled={!todoText} onClick={handleAddTodo}>
+          <Button
+            color="success"
+            className="mx-2"
+            disabled={!todoText}
+            onClick={handleAddTodo}
+          >
             Add Todo
           </Button>
         </Form>

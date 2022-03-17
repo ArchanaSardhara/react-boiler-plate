@@ -1,0 +1,31 @@
+@import "../abstract/variables";
+
+.text {
+  &-base {
+    color: $color-base !important;
+  }
+  &-primary {
+    color: $color-primary !important;
+  }
+  &-secondary {
+    color: $color-secondary !important;
+  }
+  &-white {
+    color: $color-white !important;
+  }
+  &-black {
+    color: $color-black;
+  }
+}
+
+.bg {
+  &-base {
+    background-color: $color-base !important;
+  }
+  &-primary {
+    background-color: $color-primary !important;
+  }
+  &-secondary {
+    background-color: $color-secondary !important;
+  }
+}

@@ -1,0 +1,25 @@
+.modal-content {
+  background-color: $color-base;
+  border-radius: 15px;
+  color: $color-secondary;
+
+  .modal-title {
+    color: $color-secondary;
+  }
+
+  .modal-header {
+    border-bottom-color: $color-base-light;
+  }
+
+  .modal-footer {
+    border-top-color: $color-base-light;
+  }
+
+  .btn-close {
+    width: 10px;
+    height: 10px;
+    background-size: 8px 8px;
+    border-radius: 50%;
+    background-color: $color-secondary-light;
+  }
+}
