@@ -1,7 +1,15 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-@import "./base";
+@import "./abstract/functions";
+@import "./abstract/mixins";
+@import "./abstract/variables";
 
-@import "./navbar";
+@import "./base/base";
+@import "./base/colors";
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/utilities";
 
-@import "./todo";
+@import "./layout/navbar";
+
+@import "./pages/todo";

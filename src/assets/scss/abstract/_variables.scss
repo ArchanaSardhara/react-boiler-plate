@@ -1,0 +1,38 @@
+$themes: (
+  "dark": (
+    base: #1c2128,
+    base-light: #373e47,
+    primary: #539bf5,
+    secondary: #768390,
+    header-bg: #2d333b,
+  ),
+  "light": (
+    base: #fff,
+    base-light: #f6f8fa,
+    primary: #539bf5,
+    secondary: #57606a,
+    header-bg: #24292f,
+  ),
+);
+
+@each $theme-name, $colors in $themes {
+  [data-theme="#{$theme-name}"] {
+    @each $name, $color in $colors {
+      --#{$name}: #{$color};
+    }
+  }
+}
+
+$color-base: var(--base);
+$color-base-light: var(--base-light);
+$color-primary: var(--primary);
+$color-secondary: var(--secondary);
+$color-header-bg: var(--header-bg);
+// $color-secondary-light: var(--secondary-light);
+// $color-secondary-dark: var(--secondary-dark);
+// $color-text-primary: var(--text-primay);
+// $color-success: var(--success);
+// $color-danger: var(--danger);
+
+$color-black: #000;
+$color-white: #fff;
