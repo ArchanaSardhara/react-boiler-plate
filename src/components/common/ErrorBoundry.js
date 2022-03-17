@@ -1,7 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "reactstrap";
 
 class ErrorBoundary extends React.Component {
@@ -26,23 +24,14 @@ class ErrorBoundary extends React.Component {
     const { children } = this.props;
     if (hasError) {
       return (
-        <div
-          className="error-boundry-container text-text-primary
-            d-flex justify-content-center align-items-center"
-        >
-          <div className="text-center">
-            <div className="mb-2">
-              <h1>
-                <FontAwesomeIcon
-                  size="md"
-                  className="mr-2"
-                  icon={faExclamationTriangle}
-                />
-                Something went wrong!
-              </h1>
+        <div className="vh-100 vw-100">
+          <div className="d-flex justify-content-center align-items-center w-100 h-100">
+            <div className="mb-2 text-center">
+              <h1>Something went wrong!</h1>
               <p className="text-muted text-wrap">{errorInfo}</p>
               <Button
-                className="btn btn-primary mt-4"
+                color="primary"
+                className="mt-4"
                 onClick={() => {
                   window.location.reload();
                 }}
