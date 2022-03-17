@@ -1,5 +1,9 @@
 .header-container {
   position: relative;
+  background-color: $color-header-bg !important;
+  .navbar-brand {
+    color: $color-header-text;
+  }
   .logo {
     height: 40px;
   }
@@ -10,16 +14,17 @@
     margin: 0px 10px;
   }
   .nav-item .dropdown-menu {
-    background: #343a40;
+    background: $color-header-bg;
   }
+  .nav-item .nav-link,
   .nav-item .dropdown-item {
-    color: #ffffff;
+    color: $color-header-text !important;
   }
   .nav-item .dropdown-item:hover {
-    background: #434b53;
+    background: $color-secondary !important;
   }
   .dropdown-divider {
-    border-top: 1px solid #818181;
+    border-top: 1px solid $color-secondary-light;
   }
   .dropdown-menu {
     right: 0px;
